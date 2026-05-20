@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designer Portfolio - Resume</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="icon-bars" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+        </symbol>
+        <symbol id="icon-moon" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </symbol>
+        <symbol id="icon-sun" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.79 1.42-1.41zM4 10.5H1v2h3v-2zm9-9.95h-2V3.5h2V.55zm7.45 3.91l-1.41-1.41-1.79 1.79 1.41 1.41 1.79-1.79zm-3.21 13.7l1.79 1.8 1.41-1.41-1.8-1.79-1.4 1.4zM20 10.5v2h3v-2h-3zm-8-5c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm-1 16.95h2V19.5h-2v2.95zm-7.45-3.91l1.41 1.41 1.79-1.8-1.41-1.41-1.79 1.8z"/>
+        </symbol>
+        <symbol id="icon-home" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+        </symbol>
+        <symbol id="icon-folder-open" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"/>
+        </symbol>
+        <symbol id="icon-user" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+        </symbol>
+        <symbol id="icon-envelope" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </symbol>
+        <symbol id="icon-arrow-left" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59z"/>
+        </symbol>
+    </svg>
+</head>
+<body>
+    <div class="gradient-orb gradient-orb-1"></div>
+    <div class="gradient-orb gradient-orb-2"></div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="4" y="8" width="24" height="20" rx="4" fill="url(#gradient)"/>
+                        <rect x="8" y="12" width="6" height="6" rx="2" fill="#ffffff" opacity="0.9"/>
+                        <rect x="18" y="12" width="6" height="6" rx="2" fill="#ffffff" opacity="0.6"/>
+                        <rect x="8" y="20" width="16" height="4" rx="2" fill="#ffffff" opacity="0.8"/>
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#6366f1"/>
+                                <stop offset="100%" style="stop-color:#a855f7"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <svg class="icon" viewBox="0 0 24 24"><use href="#icon-bars"/></svg>
+            </button>
+            <div class="theme-toggle" id="themeToggle">
+                <svg class="icon" viewBox="0 0 24 24"><use href="#icon-moon"/></svg>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" data-text="首页"><div class="nav-content"><div class="nav-front"><span>首页</span></div><div class="nav-back"><svg class="icon" viewBox="0 0 24 24"><use href="#icon-home"/></svg></div></div></a></li>
+                <li><a href="works.html" data-text="个人作品"><div class="nav-content"><div class="nav-front"><span>个人作品</span></div><div class="nav-back"><svg class="icon" viewBox="0 0 24 24"><use href="#icon-folder-open"/></svg></div></div></a></li>
+                <li><a href="resume.html" class="active" data-text="个人履历"><div class="nav-content"><div class="nav-front"><span>个人履历</span></div><div class="nav-back"><svg class="icon" viewBox="0 0 24 24"><use href="#icon-user"/></svg></div></div></a></li>
+                <li><a href="contact.html" data-text="联系方式"><div class="nav-content"><div class="nav-front"><span>联系方式</span></div><div class="nav-back"><svg class="icon" viewBox="0 0 24 24"><use href="#icon-envelope"/></svg></div></div></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            
+            <div class="resume-profile">
+                <div class="profile-card">
+                    <div class="profile-header">
+                        <div class="profile-avatar">
+                            <svg class="icon" viewBox="0 0 24 24"><use xlink:href="#icon-user"/></svg>
+                        </div>
+                        <div class="profile-info">
+                            <h3 class="profile-name">陈泽宇</h3>
+                            <p class="profile-title">AI设计师</p>
+                            <p class="profile-location"><svg class="icon" viewBox="0 0 24 24"><use href="#icon-map-marker"/></svg> Guangdong, China</p>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-details">
+                        <div class="detail-item">
+                            <svg class="icon" viewBox="0 0 24 24"><use href="#icon-briefcase"/></svg>
+                            <span>5 Years Experience</span>
+                        </div>
+                        <div class="detail-item">
+                            <svg class="icon" viewBox="0 0 24 24"><use href="#icon-award"/></svg>
+                            <span>Some Awards</span>
+                        </div>
+                        <div class="detail-item">
+                            <svg class="icon" viewBox="0 0 24 24"><use href="#icon-phone"/></svg>
+                            <span>13580000101</span>
+                        </div>
+                        <div class="detail-item">
+                            <svg class="icon" viewBox="0 0 24 24"><use href="#icon-envelope"/></svg>
+                            <span>1352714198@qq.com</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-card">
+                    <h3 class="skills-title">Professional Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">UI Design</div>
+                        <div class="skill-item">MasterGo</div>
+                        <div class="skill-item">Figma</div>
+                        <div class="skill-item">Photoshop</div>
+                        <div class="skill-item">Illustrator</div>
+                        <div class="skill-item">绘画</div>
+                        <div class="skill-item">CSP</div>
+                        <div class="skill-item">WPS</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resume-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <p class="timeline-year">2024 - Present</p>
+                        <h3 class="timeline-title">AI设计师</h3>
+                        <p class="timeline-company">Tech Startup, Guangdong</p>
+                        <p class="timeline-desc">负责产品数字化设计战略，带领设计团队完成多个核心产品的设计工作。</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <p class="timeline-year">2025 - 2026</p>    
+                        <h3 class="timeline-title">AI设计师</h3>
+                        <p class="timeline-company">Digital Agency, Guangdong</p>
+                        <p class="timeline-desc">为多家知名企业提供数字化产品设计服务，涵盖金融、电商、教育等领域。</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <p class="timeline-year">2025 - 2026</p>
+                        <h3 class="timeline-title">Visual Designer</h3>
+                        <p class="timeline-company">Design Studio, Guangdong</p>
+                        <p class="timeline-desc">专注于品牌视觉设计和用户界面设计，参与多个品牌升级项目。</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <p class="timeline-year">2021 - 2025</p>
+                        <h3 class="timeline-title">Bachelor of Design</h3>
+                        <p class="timeline-company">Central Academy of Fine Arts</p>
+                        <p class="timeline-desc">主修艺术设计学，获得学士学位。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>漏 2025 Designer Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
