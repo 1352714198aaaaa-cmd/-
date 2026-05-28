@@ -247,3 +247,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+function showComingSoon(platform) {
+    alert(`「${platform}」\n\n尽请期待`);
+}
